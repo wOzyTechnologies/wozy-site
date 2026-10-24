@@ -60,7 +60,7 @@ of wOzy.
 https://www.wozy.co/
 
 ASSETS IN THIS KIT
-- icon/: app icon, 512x512 PNG
+- icon/: app icon, 1024x1024 PNG
 - screenshots/: 8 in-game screenshots, 720x1565 JPG
 - in-hand/: 4 renders of the game on an iPhone held in a hand, 1606x2176
   transparent PNG
