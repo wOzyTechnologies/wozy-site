@@ -22,7 +22,8 @@
   "image": "https://www.wozy.co/animal-loop/assets/app-icon.png",
   "installUrl": "https://apps.apple.com/us/app/animal-loop/id6806081867",
   "sameAs": [
-    "https://apps.apple.com/us/app/animal-loop/id6806081867"
+    "https://apps.apple.com/us/app/animal-loop/id6806081867",
+    "https://www.producthunt.com/products/animal-loop"
   ],
   "publisher": {
     "@type": "Organization",
@@ -211,6 +212,17 @@
   .diary-more .all { color: var(--navy); background: var(--amber); padding: 11px 20px; border-radius: 22px; text-decoration: none; box-shadow: 0 3px 0 var(--amber-deep); }
   .diary-more .all:hover { background: #F2B03A; color: var(--navy); }
 
+  /* what others are saying */
+  .mentions { width: 100%; max-width: 1040px; margin: 36px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .mentions li { flex: 0 1 330px; display: flex; }
+  .mentions a { flex: 1; display: flex; flex-direction: column; gap: 8px; background: #FFFDF6; border-radius: 24px; padding: 20px 20px 22px; text-decoration: none; color: var(--navy); box-shadow: 0 0 0 1.5px #EADFC4, 0 6px 0 #EADFC4; transition: transform .15s; }
+  .mentions a:hover { color: var(--navy); transform: translateY(-3px); box-shadow: 0 0 0 1.5px var(--amber), 0 6px 0 var(--amber-deep); }
+  .mentions .src { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--plum); }
+  .mentions h3 { margin: 0; font-size: 21px; line-height: 1.2; font-weight: 900; letter-spacing: -0.3px; text-wrap: balance; }
+  .mentions p { margin: 0; font-size: 15px; line-height: 1.5; color: var(--body); }
+  .mentions .badge { display: block; margin-top: auto; padding-top: 8px; }
+  .mentions .badge img { display: block; width: 250px; height: 54px; }
+  .mentions-more { margin: 28px 0 0; font-size: 16px; font-weight: 800; text-align: center; color: var(--body); }
   /* numbers + CTA */
   .numbers { margin-top: 96px; background: var(--night); padding: 80px 24px; display: flex; justify-content: center; }
   .numbers ul { width: 100%; max-width: 1040px; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
@@ -530,6 +542,25 @@
     <a class="all" href="blog/">See all posts</a>
     <a href="blog/subscribe/">Get new posts by RSS</a>
   </div>
+</section>
+
+<section class="sec" aria-labelledby="mentions">
+  <div class="head center">
+    <h2 id="mentions">What others are saying about Animal Loop</h2>
+    <p>Features, reviews and posts about the game from around the web.</p>
+  </div>
+  <!-- To add a site, copy this card into the list:
+    <li><a href="https://example.com/article" target="_blank" rel="noopener noreferrer">
+      <span class="src">Site name</span><h3>Headline or a short quote</h3><p>One line about the piece.</p>
+    </a></li>
+  -->
+  <ul class="mentions">
+    <li><a href="https://www.producthunt.com/products/animal-loop?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-animal-loop" target="_blank" rel="noopener noreferrer">
+      <span class="src">Product Hunt</span><h3>Cute Arcade Ball Racing Game</h3><p>Animal Loop is on Product Hunt. Leave a comment or an upvote.</p>
+      <span class="badge"><img alt="Animal Loop - Cute Arcade Ball Racing Game | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1291484&amp;theme=neutral&amp;t=1792857870958" loading="lazy"></span>
+    </a></li>
+  </ul>
+  <p class="mentions-more">Writing about Animal Loop? <a href="press/">Get the press kit</a></p>
 </section>
 
 <section class="sec" aria-labelledby="faq">
