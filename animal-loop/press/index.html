@@ -96,6 +96,8 @@
   .gallery span { font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.35; }
   .in-hand { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .in-hand img { background: linear-gradient(180deg, #B08ED0 0%, #E1A0C2 55%, #F8C6B6 100%); }
+  .duo { grid-template-columns: minmax(0, 1fr) minmax(0, 1.92fr); align-items: end; max-width: 760px; }
+  @media (max-width: 560px) { .duo { grid-template-columns: minmax(0, 1fr); } }
   .racers { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
   .racers img { box-shadow: none; background: #F1E6C9; padding: 8px; box-sizing: border-box; }
   .racers a:hover img { box-shadow: 0 0 0 1.5px #EDA11F; }
@@ -152,7 +154,7 @@
   <span class="tag">PRESS KIT</span>
   <h1>Animal Loop</h1>
   <p>The one-tap racing game for iPhone, iPad and Mac. Your animal rolls on its own. Every tap turns it.</p>
-  <a class="btn" href="animal-loop-press-kit.zip" download>Download the press kit <small>ZIP · 8 MB</small></a>
+  <a class="btn" href="animal-loop-press-kit.zip" download>Download the press kit <small>ZIP · 11 MB</small></a>
   <a class="btn btn-alt" href="/contact/?app=animal-loop&amp;type=press">Contact us for press</a>
 </header>
 
@@ -227,12 +229,22 @@
 
   <section aria-labelledby="in-hand">
     <h2 id="in-hand">Phone in hand</h2>
-    <p class="note">Animal Loop on an iPhone, held in a hand. Transparent PNGs, 1606 × 2176, ready to drop on any background.</p>
+    <p class="note">Animal Loop on an iPhone, held in a hand. Transparent PNGs, 1606 × 2176 unless noted, ready to drop on any background.</p>
     <ul class="gallery in-hand">
       <li><a href="files/in-hand/animal-loop-in-hand-01-menu.png" download><img src="../assets/in-hand/01-menu.webp" alt="Animal Loop on an iPhone held in a hand: Main menu" width="600" height="813" loading="lazy"><span>Main menu</span></a></li>
       <li><a href="files/in-hand/animal-loop-in-hand-02-dune-flats-day.png" download><img src="../assets/in-hand/02-dune-flats-day.webp" alt="Animal Loop on an iPhone held in a hand: Dune Flats at noon" width="600" height="813" loading="lazy"><span>Dune Flats at noon</span></a></li>
       <li><a href="files/in-hand/animal-loop-in-hand-03-coral-shallows-trefoil.png" download><img src="../assets/in-hand/03-coral-shallows-trefoil.webp" alt="Animal Loop on an iPhone held in a hand: Coral Shallows: Trefoil" width="600" height="813" loading="lazy"><span>Coral Shallows: Trefoil</span></a></li>
       <li><a href="files/in-hand/animal-loop-in-hand-04-fern-hollow-mushroom.png" download><img src="../assets/in-hand/04-fern-hollow-mushroom.webp" alt="Animal Loop on an iPhone held in a hand: Fern Hollow: Mushroom" width="600" height="813" loading="lazy"><span>Fern Hollow: Mushroom</span></a></li>
+      <li><a href="files/in-hand/animal-loop-in-hand-05-iphone-dune-flats-figure-8.png" download><img src="../assets/iphone-in-hand.webp" alt="Animal Loop on an iPhone held in a hand: Dune Flats: Figure 8" width="740" height="1009" loading="lazy"><span>Dune Flats: Figure 8 (740 × 1009)</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="duo">
+    <h2 id="duo">iPhone Duo</h2>
+    <p class="note">Animal Loop on iPhone Duo, folded and open. Transparent PNGs, ready to drop on any background.</p>
+    <ul class="gallery in-hand duo">
+      <li><a href="files/iphone-duo/animal-loop-iphone-duo-folded-fern-hollow.png" download><img src="../assets/duo-in-hand.webp" alt="Animal Loop's Fern Hollow track on an iPhone Duo, folded, held in one hand" width="860" height="1112" loading="lazy"><span>Folded: Fern Hollow (860 × 1112)</span></a></li>
+      <li class="open"><a href="files/iphone-duo/animal-loop-iphone-duo-open-coral-shallows.png" download><img src="../assets/duo-open-in-hands.webp" alt="Animal Loop's Coral Shallows trefoil track across an open iPhone Duo, held in two hands" width="1500" height="1012" loading="lazy"><span>Open: Coral Shallows (1500 × 1012)</span></a></li>
     </ul>
   </section>
 

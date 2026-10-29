@@ -80,8 +80,10 @@ https://www.wozy.co/
 ASSETS IN THIS KIT
 - icon/: app icon, 1024x1024 PNG
 - screenshots/: 8 in-game screenshots, 720x1565 JPG
-- in-hand/: 4 renders of the game on an iPhone held in a hand, 1606x2176
-  transparent PNG
+- in-hand/: 5 renders of the game on an iPhone held in a hand, transparent
+  PNG (4 at 1606x2176, 1 at 740x1009)
+- iphone-duo/: the game on iPhone Duo, folded (860x1112) and open
+  (1500x1012), transparent PNG
 - racers/: all 18 racers, transparent PNG
 - animal-loop-key-art-1200x630.jpg
 
