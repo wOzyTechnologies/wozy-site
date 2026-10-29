@@ -83,6 +83,11 @@
   .facts dd { margin: 4px 0 0; font-size: 17px; font-weight: 800; color: #2B1F4D; overflow-wrap: anywhere; }
   .copy { background: #FFFDF6; border-radius: 24px; padding: 24px 26px 12px; box-shadow: 0 0 0 1.5px #EADFC4; margin-bottom: 18px; }
   .bullets { margin: 0; padding-left: 22px; columns: 2 300px; column-gap: 40px; }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 18px; }
+  .points .lead { grid-column: 1 / -1; }
+  .points li { background: #FFFDF6; border-radius: 20px; padding: 20px 22px 8px; box-shadow: 0 0 0 1.5px #EADFC4; }
+  .points h3 { margin: 0 0 6px; font-size: 19px; line-height: 1.25; font-weight: 900; color: #2B1F4D; }
+  .points p { font-size: 16px; }
   .bullets li { break-inside: avoid; margin-bottom: 6px; }
   .gallery { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; }
   .gallery a { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #3A2F55; }
@@ -181,24 +186,28 @@
     </div>
   </section>
 
-  <section aria-labelledby="features">
-    <h2 id="features">Key facts</h2>
-    <ul class="bullets">
-      <li>1 button: every tap turns your racer</li>
-      <li>3 worlds: Dune Flats, Coral Shallows and Fern Hollow</li>
-      <li>27 handmade tracks, 9 per world</li>
-      <li>18 collectible racers, from a hamster to an octopus</li>
-      <li>A Grand Prix in every world, raced against a rival animal</li>
-      <li>Game Center friends race as ghosts of their best runs</li>
-      <li>A real-time day/night cycle on every track</li>
-      <li>Bridges, switch gates, mud, mole tunnels and walls that crack</li>
+  <section aria-labelledby="fun">
+    <h2 id="fun">Why it's fun to play</h2>
+    <ul class="points">
+      <li class="lead"><h3>One tap. Easy to pick up, hard to master.</h3><p>Your animal rolls on its own and every tap turns it. Anyone can play in seconds. Holding a clean line at top speed takes real skill.</p></li>
+      <li><h3>Three worlds that each play differently</h3><p>Switch gates in Dune Flats, bridges and tunnels in Coral Shallows, sticky mud and mole shortcuts in Fern Hollow, and walls that crack if you keep hitting them. 27 handmade tracks, and no two ride the same.</p></li>
+      <li><h3>Race your friends, no setup</h3><p>Your Game Center friends' best runs show up on the track as ghosts. No invites and no waiting. Just start a race and see who's ahead.</p></li>
+      <li><h3>Prove you're the best in the Grand Prix</h3><p>Race all nine tracks of a world back to back against its rival animal. Win, and the rival joins your crew.</p></li>
+      <li><h3>Plenty to unlock</h3><p>Collect 18 animals and earn achievements along the way. Everything in the game can be unlocked by playing.</p></li>
+      <li><h3>Play anywhere</h3><p>Your progress syncs through iCloud across iPhone, iPad and Mac. On iPhone Duo it plays folded or open, however you hold it.</p></li>
+      <li><h3>Free, and always growing</h3><p>The whole game is free, with new tracks, worlds and racers added regularly. Next up: Frost Valley, a fourth world where the ice breaks behind you.</p></li>
     </ul>
   </section>
 
-  <section aria-labelledby="history">
-    <h2 id="history">History</h2>
-    <p>Animal Loop began around 2010 as <em>Hamster Racing</em>, an idea sketched right after wOzy launched its first game, TicToe Fury, for the first iPad. It was shelved. Development restarted from a blank Xcode project on July 28, 2026.</p>
-    <p>A game with a single input lives or dies on its difficulty curve, so Sebastián built custom tools to balance the 27 tracks: a level editor, a track analyzer that scores each track's difficulty, and a simulator that plays every track with a bot. The full story is in the dev diary: <a href="../blog/building-animal-loop/">One Tap, Twenty-Seven Tracks, and a Simulation Engine I Never Planned to Build</a>.</p>
+  <section aria-labelledby="story">
+    <h2 id="story">The story behind it</h2>
+    <ul class="points">
+      <li><h3>Sixteen years from sketch to App Store</h3><p>Animal Loop began in 2010 as <em>Hamster Racing</em>, a pen sketch made right after wOzy launched its first game, TicToe Fury, for the first iPad. It was shelved. Development finally restarted from a blank Xcode project on July 28, 2026, and Sebastián Salazar de Greiff, co-founder of wOzy, built the whole game on his own.</p></li>
+      <li><h3>Every animal is drawn in code</h3><p>There are no image files for the art. Every animal, plant and landmark is built from code shapes, so the whole scene can recolor live from day to night, at up to 120 fps.</p></li>
+      <li><h3>Original music that changes with each world</h3><p>All the music was made for the game and is played live, shifting its sound to match the world you're racing in.</p></li>
+      <li><h3>A bot that tests every track</h3><p>With one button, a track that's slightly too narrow can become impossible. So Sebastián built a level editor, a track analyzer that scores each track's difficulty, and a bot that plays every track with human-like mistakes to find where it breaks. Every track is rated from 150cc to 285cc.</p></li>
+    </ul>
+    <p style="margin-top: 18px">The full story is in the dev diary: <a href="../blog/building-animal-loop/">One Tap, Twenty-Seven Tracks, and a Simulation Engine I Never Planned to Build</a>.</p>
   </section>
 
   <section aria-labelledby="shots">
