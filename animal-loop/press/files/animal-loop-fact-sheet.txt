@@ -79,7 +79,8 @@ https://www.wozy.co/
 
 ASSETS IN THIS KIT
 - icon/: app icon, 1024x1024 PNG
-- screenshots/: 8 in-game screenshots, 720x1565 JPG
+- screenshots/: 12 in-game screenshots, JPG (home and track select at
+  1206x2622, night home 920x2000, in-race shots 720x1565)
 - in-hand/: 5 renders of the game on an iPhone held in a hand, transparent
   PNG (4 at 1606x2176, 1 at 740x1009)
 - iphone-duo/: the game on iPhone Duo, folded (860x1112) and open
