@@ -8,8 +8,6 @@ Version:     1.1.6
 Platforms:   iPhone, iPad, iPhone Duo and Apple silicon Macs (as the iPad app)
 Requires:    iOS 26 or iPadOS 26, or later
 Price:       Free to download, with optional in-app purchases
-Purchases:   Unlock a racer early for $0.99, or every racer you can buy for
-             $4.99. Every racer can also be earned by playing.
 Genre:       One-tap racing (Games > Arcade)
 Services:    Game Center (friends, leaderboards, achievements) and iCloud sync
 App Store:   https://apps.apple.com/us/app/animal-loop/id6806081867
@@ -75,8 +73,8 @@ WHY IT'S FUN TO PLAY
 - Prove you're the best in the Grand Prix: all nine tracks of a world back to
   back against its rival animal. Win, and the rival joins your crew.
 - Plenty to unlock: 19 animals to collect, including Turkey, the first
-  seasonal racer, and achievements to earn. Every racer you can buy can also
-  be earned by playing.
+  seasonal racer, and achievements to earn. Every racer can be earned in
+  the game.
 - Play anywhere: progress syncs through iCloud across iPhone, iPad and Mac.
   On iPhone Duo it plays folded or open, however you hold it.
 - Free, and always growing: the whole game is free to download, and it keeps
