@@ -4,7 +4,7 @@ https://www.wozy.co/animal-loop/press/
 Developer:   wOzy (wOzy Technologies LLC)
 Created by:  Sebastián Salazar de Greiff
 Released:    2026
-Platforms:   iPhone, iPad, Mac and iPhone Duo
+Platforms:   iPhone, iPad, iPhone Duo and Apple silicon Macs (as the iPad app)
 Price:       Free, with in-app purchases
 Genre:       One-tap racing
 App Store:   https://apps.apple.com/us/app/animal-loop/id6806081867
@@ -13,7 +13,7 @@ Dev diary:   https://www.wozy.co/animal-loop/blog/building-animal-loop/
 
 SHORT DESCRIPTION
 Animal Loop is a one-tap racing game for iPhone, iPad and Mac. Your animal
-rolls on its own, and every tap turns it. Race 18 animals across 27 handmade
+rolls on its own, and every tap turns it. Race 19 animals across 27 handmade
 tracks in three worlds, take on a Grand Prix in every world, and race into the
 night as the sun sets on every track.
 
@@ -23,10 +23,10 @@ forward in a straight line, and each tap turns it. Time your taps to stay off
 the walls and keep your hearts.
 
 The game spans three worlds, each with nine handmade tracks, from simple loops
-to knots that cross over and under themselves. Dune Flats adds switch gates
-that flip which way a tap turns you. Coral Shallows adds bridges and loops that
-pass back under themselves. Fern Hollow adds sticky mud and moles that dig you
-a shortcut.
+to knots that cross over and under themselves. Dune Flats brings switch gates
+that flip which way a tap turns you, and bridges where the track passes back
+under itself. Both show up in every world after that. Coral Shallows adds
+sticky mud. Fern Hollow adds moles that dig you a shortcut.
 
 Every world ends with a Grand Prix: all nine tracks back to back, at the speed
 you pick, against that world's rival animal. Win it and the rival joins your
@@ -37,37 +37,33 @@ WHY IT'S FUN TO PLAY
 - One tap. Easy to pick up, hard to master. Your animal rolls on its own and
   every tap turns it. Anyone can play in seconds. Holding a clean line at top
   speed takes real skill.
-- Three worlds that each play differently: switch gates in Dune Flats, bridges
-  and tunnels in Coral Shallows, sticky mud and mole shortcuts in Fern Hollow,
-  and walls that crack if you keep hitting them. 27 handmade tracks, and no two
+- Three worlds that each play differently: switch gates and bridges from the
+  very first world, sticky mud in Coral Shallows, mole shortcuts in Fern
+  Hollow, and walls that crack if you keep hitting them. 27 handmade tracks, and no two
   ride the same.
 - Race your friends, no setup: Game Center friends' best runs show up on the
   track as ghosts. No invites and no waiting.
 - Prove you're the best in the Grand Prix: all nine tracks of a world back to
   back against its rival animal. Win, and the rival joins your crew.
-- Plenty to unlock: 18 animals to collect and achievements to earn.
-  Everything in the game can be unlocked by playing.
+- Plenty to unlock: 19 animals to collect, including Turkey, the first
+  seasonal racer, and achievements to earn. Every racer you can buy can also
+  be earned by playing.
 - Play anywhere: progress syncs through iCloud across iPhone, iPad and Mac.
   On iPhone Duo it plays folded or open, however you hold it.
-- Free, and always growing: new tracks, worlds and racers are added regularly.
-  Next up: Frost Valley, a fourth world where the ice breaks behind you.
+- Free, and always growing: the whole game is free to download, and it keeps
+  growing. Turkey, the first seasonal racer, joined in the seasonal update.
 
 THE STORY BEHIND IT
 - Sixteen years from sketch to App Store: Animal Loop began in 2010 as
   "Hamster Racing", a pen sketch made right after wOzy launched its first
   game, TicToe Fury, for the first iPad. It was shelved. Development restarted
-  from a blank Xcode project on July 28, 2026, and Sebastián Salazar de
-  Greiff built the whole game on his own.
+  from scratch on July 28, 2026, and Sebastián Salazar de Greiff built the
+  whole game on his own.
 - Every animal is drawn in code: no image files for the art. Every animal,
   plant and landmark is built from code shapes, so the whole scene recolors
-  live from day to night, at up to 120 fps.
+  live from day to night.
 - Original music that changes with each world: all the music was made for the
-  game and is played live, shifting its sound to match the world.
-- A bot that tests every track: with one button, a track that's slightly too
-  narrow can become impossible. So Sebastián built a level editor, a track
-  analyzer that scores each track's difficulty, and a bot that plays every
-  track with human-like mistakes to find where it breaks. Every track is rated
-  from 150cc to 285cc.
+  game, and it shifts its sound to match the world.
 
 ABOUT WOZY
 wOzy is a small independent studio that has made iPhone and iPad apps and games
@@ -85,7 +81,7 @@ ASSETS IN THIS KIT
   PNG (4 at 1606x2176, 1 at 740x1009)
 - iphone-duo/: the game on iPhone Duo, folded (860x1112) and open
   (1500x1012), transparent PNG
-- racers/: all 18 racers, transparent PNG
+- racers/: all 19 racers, transparent PNG
 - animal-loop-key-art-1200x630.jpg
 
 All assets may be used for coverage of Animal Loop.
