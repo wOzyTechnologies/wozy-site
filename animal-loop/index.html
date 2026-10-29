@@ -38,6 +38,7 @@
     "url": "https://www.wozy.co/"
   },
   "applicationSubCategory": "Racing",
+  "softwareRequirements": "Requires iOS 26 or iPadOS 26 or later",
   "screenshot": [
     "https://www.wozy.co/animal-loop/assets/screens/desert-day.webp",
     "https://www.wozy.co/animal-loop/assets/screens/water-trefoil.webp",
@@ -261,6 +262,106 @@
     .daynight .frame::before { top: 12px; height: 14px; }
     .numbers ul { gap: 28px 18px; }
   }
+
+  /* how you move up */
+  .loop-steps { width: 100%; max-width: 1040px; margin: 36px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .loop-steps li { background: #FFFDF6; border-radius: 22px; padding: 20px 22px; box-shadow: 0 0 0 1.5px #EADFC4, 0 5px 0 #EADFC4; display: flex; flex-direction: column; gap: 6px; }
+  .loop-steps .ico { font-size: 22px; letter-spacing: 3px; line-height: 1; }
+  .loop-steps .ico.hearts { color: #D9534F; } .loop-steps .ico.stars { color: var(--amber); } .loop-steps .ico.next { color: var(--teal); font-weight: 900; }
+  .loop-steps b { font-size: 19px; font-weight: 900; }
+  .loop-steps span:last-child { font-size: 16px; line-height: 1.5; color: var(--body); }
+
+  /* racers: taglines + ways to join */
+  .roster small { display: block; margin-top: -4px; font-size: 12px; font-weight: 700; color: rgba(247,237,209,0.6); text-align: center; line-height: 1.3; }
+  .join { width: 100%; max-width: 1000px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+  .join h3 { margin: 0; font-size: 28px; font-weight: 900; letter-spacing: -0.4px; color: #F7EDD1; text-align: center; }
+  .join-ways { width: 100%; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .join-ways li { background: rgba(247,237,209,0.07); border-radius: 22px; padding: 18px 18px 20px; box-shadow: inset 0 0 0 1.5px rgba(247,237,209,0.16); display: flex; flex-direction: column; gap: 8px; }
+  .join-ways img { width: 56px; height: 56px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); }
+  .join-ways .medals { display: flex; gap: 6px; height: 56px; align-items: center; }
+  .join-ways .medals i { width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 4px rgba(0,0,0,0.18); }
+  .join-ways b { font-size: 18px; font-weight: 900; color: #F7EDD1; }
+  .join-ways span { font-size: 15px; line-height: 1.5; color: rgba(247,237,209,0.82); }
+  .join-note { margin: 0; max-width: 640px; text-align: center; font-size: 15px; line-height: 1.6; color: rgba(247,237,209,0.7); }
+
+  /* seasons */
+  .season .split { align-items: center; }
+  .season-art { border-radius: 28px; overflow: hidden; box-shadow: 0 0 0 6px var(--navy), 0 18px 36px rgba(43,31,77,0.22); }
+  .season-art img { display: block; width: 100%; height: auto; }
+  .kicker { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--plum); }
+  .seasons { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .seasons li { font-size: 15px; font-weight: 800; background: #FFFDF6; padding: 7px 14px; border-radius: 99px; box-shadow: 0 0 0 1.5px #EADFC4, 0 3px 0 #EADFC4; }
+  .txt .more { align-self: flex-start; font-weight: 900; color: var(--navy); background: var(--amber); padding: 11px 20px; border-radius: 22px; text-decoration: none; box-shadow: 0 3px 0 var(--amber-deep); }
+  .txt .more:hover { background: #F2B03A; color: var(--navy); }
+
+  /* grand prix points */
+  .gp-points { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .gp-points li { position: relative; padding-left: 30px; font-size: 17px; line-height: 1.55; color: var(--body); }
+  .gp-points li::before { content: ""; position: absolute; left: 0; top: 4px; width: 18px; height: 18px; border-radius: 4px; background: repeating-conic-gradient(#2B1F4D 0% 25%, #F7EDD1 0% 50%) 0 0 / 9px 9px; box-shadow: 0 0 0 1.5px #2B1F4D; }
+  .gp-points strong { color: var(--navy); }
+
+  /* music */
+  .tunes { width: 100%; max-width: 860px; margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .tune { border-radius: 24px; padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 16px; }
+  .tune.dune { background: #EBC891; } .tune.coral { background: #39B8BE; color: #fff; } .tune.fern { background: #5DA83B; color: #fff; }
+  .tune b { font-size: 20px; font-weight: 900; }
+  .bars { height: 54px; display: flex; align-items: flex-end; gap: 6px; }
+  .bars i { flex: 1; border-radius: 6px 6px 3px 3px; background: currentColor; opacity: .55; height: 30%; animation: bar 1.1s ease-in-out infinite alternate; }
+  .tune.dune .bars i { color: var(--navy); }
+  .bars i:nth-child(2) { animation-delay: -.3s; } .bars i:nth-child(3) { animation-delay: -.7s; } .bars i:nth-child(4) { animation-delay: -.15s; }
+  .bars i:nth-child(5) { animation-delay: -.55s; } .bars i:nth-child(6) { animation-delay: -.9s; } .bars i:nth-child(7) { animation-delay: -.4s; }
+  .tune.coral .bars i { animation-duration: .9s; } .tune.fern .bars i { animation-duration: 1.3s; }
+  @keyframes bar { from { height: 18%; } to { height: 100%; } }
+  .tunes-note { margin: 18px 0 0; font-size: 16px; font-weight: 800; color: var(--body); text-align: center; }
+
+  /* make it yours */
+  .yours { width: 100%; max-width: 1040px; margin-top: 44px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: start; }
+  .yours > div { background: #FFFDF6; border-radius: 28px; padding: 26px; box-shadow: 0 0 0 1.5px #EADFC4, 0 6px 0 #EADFC4; display: flex; flex-direction: column; gap: 14px; }
+  .yours h3 { margin: 0; font-size: 24px; font-weight: 900; letter-spacing: -0.3px; }
+  .yours p { margin: 0; font-size: 17px; line-height: 1.55; color: var(--body); }
+  .icons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .icons span { width: 100%; aspect-ratio: 1; border-radius: 24%; display: grid; place-items: end center; overflow: hidden; position: relative; box-shadow: 0 5px 0 rgba(43,31,77,0.18); }
+  .icons span::after { content: ""; position: absolute; left: -10%; right: -10%; bottom: -36%; height: 62%; border-radius: 50%; background: var(--ground); }
+  .icons img { width: 84%; height: auto; position: relative; z-index: 1; margin-bottom: 6%; }
+  .sky { appearance: none; border: 0; cursor: pointer; position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 22px; overflow: hidden; background: linear-gradient(180deg, #8EC9F0 0%, #CFE8F2 70%, #F6E7C3 100%); transition: background .6s; font: inherit; }
+  .sky:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+  .sky .orb { position: absolute; top: 14%; left: 64%; width: 18%; aspect-ratio: 1; border-radius: 50%; background: #FFD25A; box-shadow: 0 0 0 10px rgba(255,210,90,0.25); transition: background .6s, box-shadow .6s; }
+  .sky .hill { position: absolute; left: -10%; right: -10%; bottom: -40%; height: 75%; border-radius: 50%; background: #9CCB6A; transition: background .6s; }
+  .sky img { position: absolute; left: 50%; bottom: 14%; width: 26%; transform: translateX(-50%); z-index: 1; filter: drop-shadow(0 6px 6px rgba(0,0,0,0.2)); transition: filter .6s; }
+  .sky .zz { position: absolute; left: 60%; bottom: 44%; z-index: 2; font-weight: 900; font-size: 20px; color: #F7EDD1; opacity: 0; transition: opacity .6s; }
+  .sky .hint { position: absolute; left: 12px; top: 12px; font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); background: rgba(255,253,246,0.85); padding: 5px 9px; border-radius: 8px; }
+  .sky.night { background: linear-gradient(180deg, #1C1B3A 0%, #3A2F6B 70%, #5A4A7A 100%); }
+  .sky.night .orb { background: #F4EED8; box-shadow: 0 0 0 10px rgba(244,238,216,0.12); }
+  .sky.night .hill { background: #3E5A44; }
+  .sky.night img { filter: brightness(0.6) drop-shadow(0 6px 6px rgba(0,0,0,0.3)); }
+  .sky.night .zz { opacity: 1; }
+
+  /* devices: seated mode + facts */
+  .seated { width: 100%; max-width: 900px; margin-top: 56px; display: grid; grid-template-columns: 300px 1fr; gap: 44px; align-items: center; }
+  .seated-shot { width: 100%; max-width: 300px; height: auto; display: block; border-radius: 28px; }
+  .seated .txt { display: flex; flex-direction: column; gap: 12px; }
+  .seated h3 { margin: 0; font-size: 28px; font-weight: 900; letter-spacing: -0.4px; }
+  .seated p { margin: 0; font-size: 18px; line-height: 1.6; color: var(--body); }
+  .facts-row { width: 100%; max-width: 1040px; margin: 48px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .facts-row li { background: #FFFDF6; border-radius: 22px; padding: 18px 20px; box-shadow: 0 0 0 1.5px #EADFC4, 0 5px 0 #EADFC4; display: flex; flex-direction: column; gap: 6px; }
+  .facts-row b { font-size: 18px; font-weight: 900; }
+  .facts-row span { font-size: 15px; line-height: 1.5; color: var(--body); }
+
+  @media (max-width: 900px) {
+    .loop-steps, .facts-row { grid-template-columns: 1fr; max-width: 520px; }
+    .join-ways { grid-template-columns: repeat(2, 1fr); }
+    .tunes { grid-template-columns: 1fr; max-width: 460px; }
+    .yours { grid-template-columns: 1fr; max-width: 560px; }
+    .seated { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 28px; }
+  }
+  @media (max-width: 560px) {
+    .join-ways { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bars i { animation: none; }
+    .bars i:nth-child(odd) { height: 70%; } .bars i:nth-child(even) { height: 40%; }
+    .sky, .sky * { transition: none; }
+  }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500&text=wOzy&display=swap" rel="stylesheet">
 <style>
@@ -300,7 +401,7 @@
       "name": "What is a Grand Prix?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The big race at the end of every world: all nine of the world's tracks, raced back to back at one speed you pick, against that world's rival animal. Beat the rival and they join your roster.",
+        "text": "The big race at the end of every world: all nine of the world's tracks, raced back to back at one speed you pick, against that world's rival animal. Beat the rival and they join your crew.",
         "url": "https://www.wozy.co/animal-loop/help/what-is-a-grand-prix/"
       }
     },
@@ -309,7 +410,7 @@
       "name": "How do you play Animal Loop with friends?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Through Game Center. Invite friends from the Friends screen, race their best runs as ghosts on every track, and beat their Grand Prix times.",
+        "text": "Through Game Center. Tap + on the Friends page to send a friend the game and a Game Center friend request. Once you're Game Center friends, their Grand Prix times show up next to yours, and in any Grand Prix you've finished, they race with you as ghosts.",
         "url": "https://www.wozy.co/animal-loop/help/how-to-play-with-friends/"
       }
     },
@@ -323,6 +424,14 @@
     },
     {
       "@type": "Question",
+      "name": "How much do racers cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing, if you'd rather play for them: every racer can be earned in the game. If you don't want to wait, you can unlock any earnable racer early for $0.99, or get every racer you can buy for $4.99 with the Unlock All Racers bundle. Otter and Horsefish can only be earned."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Which devices can I play Animal Loop on?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -331,10 +440,44 @@
     },
     {
       "@type": "Question",
+      "name": "Which iOS version do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "iOS 26 or iPadOS 26, or later. On Mac, Animal Loop runs as the iPad app on Apple silicon Macs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my progress sync between devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your progress syncs through iCloud across iPhone, iPad and Mac, and it comes back if you reinstall the game."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "How many tracks and racers are there?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "27 handmade tracks across three worlds, Dune Flats, Coral Shallows and Fern Hollow, and 19 animal racers to collect, from a hamster to a turkey."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I unlock new racers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Earn platinum medals in achievements, beat a world's rival in its Grand Prix, race on 15 days in November for Turkey, or share and rate the game for Otter and Horsefish.",
+        "url": "https://www.wozy.co/animal-loop/help/how-to-unlock-racers/"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When can I get Turkey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Turkey comes around in November. Race on 15 different days in November and it joins your crew. Any race counts, one a day, and your days add up every year, so you can finish next November if you miss some. You can also unlock it early for $0.99.",
+        "url": "https://www.wozy.co/animal-loop/blog/meet-turkey/"
       }
     },
     {
@@ -390,6 +533,11 @@
     <p>No stick, no brake. Your animal curls up and rolls in a straight line, and each tap turns it. Time your taps to stay off the walls and keep your hearts.</p>
   </div>
   <div id="mech-loops"></div>
+  <ul class="loop-steps" aria-label="How you move up">
+    <li><span class="ico hearts" aria-hidden="true">&#9829;&#9829;&#9829;&#9829;&#9829;</span><b>5 hearts a track</b><span>Every wall you bump costs one, so a clean line feels great.</span></li>
+    <li><span class="ico stars" aria-hidden="true">&#9733;&#9733;&#9733;</span><b>Up to 3 stars</b><span>Survive 1, 3 and 5 laps to earn them. The road speeds up every lap.</span></li>
+    <li><span class="ico next" aria-hidden="true">&rarr;</span><b>One lap opens the next</b><span>Finish a lap and the next track is yours. Star every track to open the Grand Prix.</span></li>
+  </ul>
 </section>
 
 <div class="divider" aria-hidden="true"><div class="dots"></div><div class="done" style="width: 22%"></div><div class="flag"></div><div class="ball" style="left: 22%; transform: rotate(-12deg)"><div><div style="position:relative; width:56px; height:56px"><div style="position:absolute; inset:0; border-radius:50%; background:#dfa96a; box-shadow:inset 0 0 0 3px #a9743a"></div>
@@ -423,40 +571,66 @@
     </div></div>
   </div>
   <div class="mechs">
-    <div class="mech"><img src="assets/mechanics/bridges.webp" alt=""><b>Bridges</b><span>Tracks cross over and under themselves.</span></div>
-    <div class="mech"><img src="assets/mechanics/gates.webp" alt=""><b>Switch gates</b><span>Flip the way your taps turn, mid-lap.</span></div>
-    <div class="mech"><img src="assets/mechanics/mud.webp" alt=""><b>Mud</b><span>Slows you down the deeper you roll in.</span></div>
-    <div class="mech"><img src="assets/mechanics/tunnels.webp" alt=""><b>Mole tunnels</b><span>Hit the mole and take the shortcut.</span></div>
-    <div class="mech"><img src="assets/mechanics/wall.webp" alt=""><b>Walls</b><span>Every bump costs a heart. Hit one too often and it cracks.</span></div>
+    <div class="mech"><img src="assets/mechanics/bridges.webp" alt=""><b>Bridges</b><span>Zip over bridges and dive through tunnels.</span></div>
+    <div class="mech"><img src="assets/mechanics/gates.webp" alt=""><b>Switch gates</b><span>Cross a gate and your turns flip. Keep your thumb on its toes.</span></div>
+    <div class="mech"><img src="assets/mechanics/mud.webp" alt=""><b>Mud</b><span>Skim the edge of the mud, or get stuck in the squelch.</span></div>
+    <div class="mech"><img src="assets/mechanics/tunnels.webp" alt=""><b>Mole tunnels</b><span>Bonk the mole, then roll down its hole and pop out ahead.</span></div>
+    <div class="mech"><img src="assets/mechanics/wall.webp" alt=""><b>Walls</b><span>Every bump costs a heart. Hit one too often and it breaks apart: sand, stone or wood.</span></div>
   </div>
 </section>
 
 <section class="racers" aria-labelledby="racers">
   <div class="head center">
     <h2 id="racers">Collect 19 racers</h2>
-    <p>Hedgehogs, otters, owls and more, each one curled up and rolling on its own spines, shell or feathers. Win a world's Grand Prix and its rival joins your roster.</p>
+    <p>Hedgehogs, otters, owls and more, each one curled up and rolling on its own spines, shell or feathers. Win a world's Grand Prix and its rival joins your crew.</p>
   </div>
   <ul class="roster">
-    <li><img src="assets/racers/hamster.png" width="280" height="280" alt="" loading="lazy">Hamster</li>
-    <li><img src="assets/racers/hedgehog.png" width="280" height="280" alt="" loading="lazy">Hedgehog</li>
-    <li><img src="assets/racers/armadillo.png" width="280" height="280" alt="" loading="lazy">Armadillo</li>
-    <li><img src="assets/racers/chipmunk.png" width="280" height="280" alt="" loading="lazy">Chipmunk</li>
-    <li><img src="assets/racers/frog.png" width="280" height="280" alt="" loading="lazy">Frog</li>
-    <li><img src="assets/racers/koala.png" width="280" height="280" alt="" loading="lazy">Koala</li>
-    <li><img src="assets/racers/ladybug.png" width="280" height="280" alt="" loading="lazy">Ladybug</li>
-    <li><img src="assets/racers/mole.png" width="280" height="280" alt="" loading="lazy">Mole</li>
-    <li><img src="assets/racers/octopus.png" width="280" height="280" alt="" loading="lazy">Octopus</li>
-    <li><img src="assets/racers/otter.png" width="280" height="280" alt="" loading="lazy">Otter</li>
-    <li><img src="assets/racers/owl.png" width="280" height="280" alt="" loading="lazy">Owl</li>
-    <li><img src="assets/racers/puffer.png" width="280" height="280" alt="" loading="lazy">Puffer</li>
-    <li><img src="assets/racers/rabbit.png" width="280" height="280" alt="" loading="lazy">Rabbit</li>
-    <li><img src="assets/racers/redpanda.png" width="280" height="280" alt="" loading="lazy">Red panda</li>
-    <li><img src="assets/racers/tortoise.png" width="280" height="280" alt="" loading="lazy">Tortoise</li>
-    <li><img src="assets/racers/chinchilla.png" width="280" height="280" alt="" loading="lazy">Chinchilla</li>
-    <li><img src="assets/racers/glider.png" width="280" height="280" alt="" loading="lazy">Sugar glider</li>
-    <li><img src="assets/racers/horsefish.png" width="280" height="280" alt="" loading="lazy">Horsefish</li>
-    <li><img src="assets/racers/turkey.png" width="280" height="280" alt="" loading="lazy">Turkey</li>
+    <li><img src="assets/racers/hamster.png" width="280" height="280" alt="" loading="lazy">Hamster<small>Cheeky &amp; fast</small></li>
+    <li><img src="assets/racers/hedgehog.png" width="280" height="280" alt="" loading="lazy">Hedgehog<small>Spiky classic</small></li>
+    <li><img src="assets/racers/armadillo.png" width="280" height="280" alt="" loading="lazy">Armadillo<small>Armoured bruiser</small></li>
+    <li><img src="assets/racers/chipmunk.png" width="280" height="280" alt="" loading="lazy">Chipmunk<small>Striped sprinter</small></li>
+    <li><img src="assets/racers/frog.png" width="280" height="280" alt="" loading="lazy">Frog<small>High jumper</small></li>
+    <li><img src="assets/racers/koala.png" width="280" height="280" alt="" loading="lazy">Koala<small>Eucalyptus cruiser</small></li>
+    <li><img src="assets/racers/ladybug.png" width="280" height="280" alt="" loading="lazy">Ladybug<small>Spotted &amp; speedy</small></li>
+    <li><img src="assets/racers/mole.png" width="280" height="280" alt="" loading="lazy">Mole<small>Digs, then wins</small></li>
+    <li><img src="assets/racers/octopus.png" width="280" height="280" alt="" loading="lazy">Octopus<small>Eight-armed spinner</small></li>
+    <li><img src="assets/racers/otter.png" width="280" height="280" alt="" loading="lazy">Otter<small>River runner</small></li>
+    <li><img src="assets/racers/owl.png" width="280" height="280" alt="" loading="lazy">Owl<small>Night watcher</small></li>
+    <li><img src="assets/racers/puffer.png" width="280" height="280" alt="" loading="lazy">Puffer<small>Inflate &amp; dominate</small></li>
+    <li><img src="assets/racers/rabbit.png" width="280" height="280" alt="" loading="lazy">Rabbit<small>Quick hopper</small></li>
+    <li><img src="assets/racers/redpanda.png" width="280" height="280" alt="" loading="lazy">Red panda<small>Nimble climber</small></li>
+    <li><img src="assets/racers/tortoise.png" width="280" height="280" alt="" loading="lazy">Tortoise<small>Slow but unstoppable</small></li>
+    <li><img src="assets/racers/chinchilla.png" width="280" height="280" alt="" loading="lazy">Chinchilla<small>Soft &amp; silent</small></li>
+    <li><img src="assets/racers/glider.png" width="280" height="280" alt="" loading="lazy">Sugar glider<small>Glides through corners</small></li>
+    <li><img src="assets/racers/horsefish.png" width="280" height="280" alt="" loading="lazy">Horsefish<small>Upright drifter</small></li>
+    <li><img src="assets/racers/turkey.png" width="280" height="280" alt="" loading="lazy">Turkey<small>Fan-tailed show-off</small></li>
   </ul>
+  <div class="join">
+    <h3>How racers join your crew</h3>
+    <ul class="join-ways">
+      <li><div class="medals" aria-hidden="true"><i style="background:#B8701F"></i><i style="background:#8F9EBD"></i><i style="background:#D69E0F"></i><i style="background:#52CCEB"></i></div><b>Earn medals</b><span>Every achievement has bronze, silver, gold and platinum medals. Reach platinum and a new racer rolls in.</span></li>
+      <li><img src="assets/racers/armadillo.png" width="280" height="280" alt="" loading="lazy"><b>Beat the rival</b><span>Win a world's Grand Prix faster than its rival, and the Armadillo, Puffer or Ladybug joins you.</span></li>
+      <li><img src="assets/racers/turkey.png" width="280" height="280" alt="" loading="lazy"><b>Race in November</b><span>Turkey only comes around once a year. Race on 15 days in November and it's yours.</span></li>
+      <li><img src="assets/racers/otter.png" width="280" height="280" alt="" loading="lazy"><b>Share the love</b><span>Send the game to a friend and Otter tags along. Rate the game and Horsefish drifts in.</span></li>
+    </ul>
+    <p class="join-note">Can't wait? Unlock any earnable racer early for $0.99, or every racer you can buy for $4.99. <a href="help/how-to-unlock-racers/" style="color:#F2B03A">See every racer and how to unlock it</a></p>
+  </div>
+</section>
+
+<section class="sec season" aria-labelledby="season">
+  <div class="split">
+    <div class="season-art"><img src="assets/blog/turkey-card.webp" width="880" height="440" alt="Turkey cheering with its tail fan spread on autumn hills" loading="lazy"></div>
+    <div class="txt">
+      <span class="kicker">Seasonal update</span>
+      <h2 id="season">A new look every season</h2>
+      <p>The title screen dresses up for the time of year where you are, and flips when you're south of the equator.</p>
+      <ul class="seasons" aria-label="Seasons on the title screen">
+        <li>&#10052;&#65039; Winter snow</li><li>&#127800; Spring petals</li><li>&#10024; Summer fireflies</li><li>&#127810; Autumn leaves</li>
+      </ul>
+      <p><strong>Turkey</strong>, the first seasonal racer, only comes around in November. Race on 15 different days that month and it joins your crew. Miss a few? Your days carry over to next November.</p>
+      <a class="more" href="blog/meet-turkey/">Meet Turkey</a>
+    </div>
+  </div>
 </section>
 
 <section class="sec" aria-labelledby="gp">
@@ -467,8 +641,14 @@
     </div>
     <div class="txt">
       <h2 id="gp">Take on the Grand Prix</h2>
-      <p>Every world ends with one: <strong>all nine tracks, back to back</strong>, at the speed you pick, against that world's rival animal.</p>
-      <p>Your Game Center friends race with you as translucent <strong>ghosts</strong> of their best runs, so you always know if you're ahead or falling behind.</p>
+      <p>Every world ends with one: <strong>all nine tracks, back to back</strong>, at the speed you pick, against that world's rival animal. Star every track in a world to open its Grand Prix.</p>
+      <ul class="gp-points">
+        <li><strong>Start on Beginner</strong> and you get unlimited lives, so anyone can make it to the finish.</li>
+        <li><strong>Push your limit</strong> with Up to 250cc, then No limit, which keeps rising as you get faster.</li>
+        <li><strong>Save &amp; Leave</strong> mid-race and pick it up later, with your time and lives, on the same track.</li>
+        <li><strong>Every finish gets a ceremony</strong>: beat the rival and it joins your crew, lose and it gloats, and once it's yours, you take the podium.</li>
+        <li><strong>Race your friends</strong>: once you've finished a Grand Prix, your Game Center friends join you there as ghosts, at the pace of their best times.</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -484,11 +664,50 @@
 <section class="sec" aria-labelledby="night">
   <div class="head center">
     <h2 id="night">Race into the night</h2>
-    <p>Every track has its own day. The sun moves as you race, shadows follow it, and the hardest laps happen by moonlight.</p>
+    <p>Every track has its own day. Race from sunrise into the night as the sun moves across the sky, and watch your shadow follow it.</p>
   </div>
   <div class="daynight">
     <figure><div class="frame"><div><img src="assets/screens/desert-day.webp" width="720" height="1565" alt="A Dune Flats track at midday"></div></div><figcaption class="cap">Noon</figcaption></figure>
     <figure><div class="frame"><div><img src="assets/screens/desert-night.webp" width="720" height="1565" alt="The same Dune Flats track at night"></div></div><figcaption class="cap">Midnight</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="music">
+  <div class="head center">
+    <h2 id="music">Every world has its own sound</h2>
+    <p>All the music was made for Animal Loop. Each world plays the songs on its own instruments, so the desert, the sea and the forest each sound like a different place. And the faster you roll, the faster it plays.</p>
+  </div>
+  <div class="tunes" aria-hidden="true">
+    <div class="tune dune"><b>Dune Flats</b><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="tune coral"><b>Coral Shallows</b><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="tune fern"><b>Fern Hollow</b><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+  <p class="tunes-note">Same songs, three new sounds. Turn it up.</p>
+</section>
+
+<section class="sec" aria-labelledby="yours">
+  <div class="head center">
+    <h2 id="yours">Make it yours</h2>
+    <p>Your favourite racer doesn't have to stay in the game.</p>
+  </div>
+  <div class="yours">
+    <div>
+      <h3>Put your racer on your home screen</h3>
+      <p>Pick your app icon from any racer you own, on any world. Swap it whenever a new favourite joins your crew.</p>
+      <div class="icons" aria-hidden="true">
+        <span style="background: linear-gradient(180deg, #F6D9A2, #EBC891); --ground: #D9A867"><img src="assets/racers/hedgehog.png" alt="" loading="lazy"></span>
+        <span style="background: linear-gradient(180deg, #8FDDE0, #39B8BE); --ground: #E9D4A3"><img src="assets/racers/octopus.png" alt="" loading="lazy"></span>
+        <span style="background: linear-gradient(180deg, #A9D98A, #5DA83B); --ground: #3F7A2E"><img src="assets/racers/turkey.png" alt="" loading="lazy"></span>
+        <span style="background: linear-gradient(180deg, #F6D9A2, #EBC891); --ground: #D9A867"><img src="assets/racers/armadillo.png" alt="" loading="lazy"></span>
+      </div>
+    </div>
+    <div>
+      <h3>Tap the sky</h3>
+      <p>On the title screen, tap the sky to flip between day and night. When the moon's out, your racer drifts off to sleep.</p>
+      <button class="sky" type="button" aria-pressed="false" aria-label="Switch between day and night">
+        <span class="orb"></span><span class="hill"></span><img src="assets/racers/hedgehog.png" alt="" loading="lazy"><span class="zz" aria-hidden="true">z z</span><span class="hint">Tap me</span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -508,6 +727,19 @@
     <figure style="--ar: 0.773"><img src="assets/duo-in-hand.webp" alt="Animal Loop's Fern Hollow track on an iPhone Duo held in one hand" width="860" height="1112" loading="lazy"><figcaption class="cap">iPhone Duo, folded</figcaption></figure>
     <figure class="open" style="--ar: 1.482"><img src="assets/duo-open-in-hands.webp" alt="Animal Loop's Coral Shallows trefoil track across the open iPhone Duo, held in two hands" width="1500" height="1012" loading="lazy"><figcaption class="cap">iPhone Duo, open</figcaption></figure>
   </div>
+  <div class="seated">
+    <img class="seated-shot" src="assets/duo/seated.webp" width="690" height="770" alt="Animal Loop on a half-folded iPhone Duo in seated mode: the track on the top half, a big tap pad on the bottom half" loading="lazy">
+    <div class="txt">
+      <span class="kicker">iPhone Duo</span>
+      <h3>Seated mode</h3>
+      <p>Half-fold your iPhone Duo and set it down. The track sits up top, and the whole bottom half turns into one big tap pad.</p>
+    </div>
+  </div>
+  <ul class="facts-row">
+    <li><b>Your progress follows you</b><span>It syncs through iCloud across iPhone, iPad and Mac, and comes right back if you reinstall.</span></li>
+    <li><b>Portrait or landscape</b><span>Hold it however feels right. One tap still steers.</span></li>
+    <li><b>iOS 26 and up</b><span>Plays on iOS 26 and iPadOS 26 or later, and on Apple silicon Macs.</span></li>
+  </ul>
 </section>
 
 <div class="divider" aria-hidden="true"><div class="dots"></div><div class="done" style="width: 84%"></div><div class="flag"></div><div class="ball" style="left: 84%; transform: rotate(-8deg)"><div><div style="position:relative; width:56px; height:56px"><div style="position:absolute; inset:0; border-radius:50%; background:#dfa96a; box-shadow:inset 0 0 0 3px #a9743a"></div>
@@ -578,14 +810,14 @@
     <details class="faq-q">
       <summary>What is a Grand Prix?</summary>
       <div>
-        <p>The big race at the end of every world: all nine of the world's tracks, raced back to back at one speed you pick, against that world's rival animal. Beat the rival and they join your roster.</p>
+        <p>The big race at the end of every world: all nine of the world's tracks, raced back to back at one speed you pick, against that world's rival animal. Beat the rival and they join your crew.</p>
         <p><a class="faq-more" href="/animal-loop/help/what-is-a-grand-prix/">Read the full answer &rarr;</a></p>
       </div>
     </details>
     <details class="faq-q">
       <summary>How do you play Animal Loop with friends?</summary>
       <div>
-        <p>Through Game Center. Invite friends from the Friends screen, race their best runs as ghosts on every track, and beat their Grand Prix times.</p>
+        <p>Through Game Center. Tap + on the Friends page to send a friend the game and a Game Center friend request. Once you're Game Center friends, their Grand Prix times show up next to yours, and in any Grand Prix you've finished, they race with you as ghosts.</p>
         <p><a class="faq-more" href="/animal-loop/help/how-to-play-with-friends/">Read the full answer &rarr;</a></p>
       </div>
     </details>
@@ -596,15 +828,47 @@
       </div>
     </details>
     <details class="faq-q">
+      <summary>How much do racers cost?</summary>
+      <div>
+        <p>Nothing, if you'd rather play for them: every racer can be earned in the game. If you don't want to wait, you can unlock any earnable racer early for $0.99, or get every racer you can buy for $4.99 with the Unlock All Racers bundle. Otter and Horsefish can only be earned.</p>
+      </div>
+    </details>
+    <details class="faq-q">
       <summary>Which devices can I play Animal Loop on?</summary>
       <div>
         <p>iPhone and iPad, including iPhone Duo, plus Apple silicon Macs, where it runs as the iPad app. One tap still steers, whatever you're holding.</p>
       </div>
     </details>
     <details class="faq-q">
+      <summary>Which iOS version do I need?</summary>
+      <div>
+        <p>iOS 26 or iPadOS 26, or later. On Mac, Animal Loop runs as the iPad app on Apple silicon Macs.</p>
+      </div>
+    </details>
+    <details class="faq-q">
+      <summary>Does my progress sync between devices?</summary>
+      <div>
+        <p>Yes. Your progress syncs through iCloud across iPhone, iPad and Mac, and it comes back if you reinstall the game.</p>
+      </div>
+    </details>
+    <details class="faq-q">
       <summary>How many tracks and racers are there?</summary>
       <div>
         <p>27 handmade tracks across three worlds, Dune Flats, Coral Shallows and Fern Hollow, and 19 animal racers to collect, from a hamster to a turkey.</p>
+      </div>
+    </details>
+    <details class="faq-q">
+      <summary>How do I unlock new racers?</summary>
+      <div>
+        <p>Earn platinum medals in achievements, beat a world's rival in its Grand Prix, race on 15 days in November for Turkey, or share and rate the game for Otter and Horsefish.</p>
+        <p><a class="faq-more" href="/animal-loop/help/how-to-unlock-racers/">See every racer and how to unlock it &rarr;</a></p>
+      </div>
+    </details>
+    <details class="faq-q">
+      <summary>When can I get Turkey?</summary>
+      <div>
+        <p>Turkey comes around in November. Race on 15 different days in November and it joins your crew. Any race counts, one a day, and your days add up every year, so you can finish next November if you miss some. You can also unlock it early for $0.99.</p>
+        <p><a class="faq-more" href="/animal-loop/blog/meet-turkey/">Meet Turkey &rarr;</a></p>
       </div>
     </details>
     <details class="faq-q">
@@ -667,6 +931,7 @@
         <h2 class="sf-h">Help</h2>
         <ul>
           <li><a href="/animal-loop/help/what-is-a-grand-prix/">What is a Grand Prix?</a></li>
+          <li><a href="/animal-loop/help/how-to-unlock-racers/">How to unlock every racer</a></li>
           <li><a href="/animal-loop/help/how-to-play-with-friends/">How to play with friends</a></li>
           <li><a href="/contact/?app=animal-loop">Contact support</a></li>
         </ul>
@@ -686,6 +951,15 @@
 </footer>
 <!-- /site-footer -->
 
-<script src="assets/al.js?v=3" defer></script>
+<script src="assets/al.js?v=4" defer></script>
+<script>
+  // "Tap the sky": flip the little title-screen scene between day and night.
+  document.querySelectorAll('.sky').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var night = b.classList.toggle('night');
+      b.setAttribute('aria-pressed', night ? 'true' : 'false');
+    });
+  });
+</script>
 </body>
 </html>

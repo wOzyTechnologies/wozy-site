@@ -3,13 +3,30 @@ https://www.wozy.co/animal-loop/press/
 
 Developer:   wOzy (wOzy Technologies LLC)
 Created by:  Sebastián Salazar de Greiff
-Released:    2026
+Released:    October 2026
+Version:     1.1.6
 Platforms:   iPhone, iPad, iPhone Duo and Apple silicon Macs (as the iPad app)
-Price:       Free, with in-app purchases
-Genre:       One-tap racing
+Requires:    iOS 26 or iPadOS 26, or later
+Price:       Free to download, with optional in-app purchases
+Purchases:   Unlock a racer early for $0.99, or every racer you can buy for
+             $4.99. Every racer can also be earned by playing.
+Genre:       One-tap racing (Games > Arcade)
+Services:    Game Center (friends, leaderboards, achievements) and iCloud sync
 App Store:   https://apps.apple.com/us/app/animal-loop/id6806081867
 Website:     https://www.wozy.co/animal-loop/
 Dev diary:   https://www.wozy.co/animal-loop/blog/building-animal-loop/
+
+READY-TO-USE LINES
+One line:  The one-tap racing game.
+Pitch:     No stick, no brake: your animal rolls on its own and every tap
+           turns it.
+
+WHAT'S NEW: VERSION 1.1, SEASONAL UPDATE
+Meet Turkey, the first seasonal racer. Turkey only comes around in November:
+race on 15 different days that month and it joins your crew, with your days
+adding up every year. The title screen now changes with the seasons too, from
+winter snow to autumn leaves.
+Dev diary: https://www.wozy.co/animal-loop/blog/meet-turkey/
 
 SHORT DESCRIPTION
 Animal Loop is a one-tap racing game for iPhone, iPad and Mac. Your animal
@@ -30,8 +47,19 @@ sticky mud. Fern Hollow adds moles that dig you a shortcut.
 
 Every world ends with a Grand Prix: all nine tracks back to back, at the speed
 you pick, against that world's rival animal. Win it and the rival joins your
-roster. Game Center friends race alongside you as ghosts of their best runs.
-Every track also has its own day/night cycle, with shadows that follow the sun.
+crew. Once you've finished a Grand Prix, your Game Center friends race it with
+you as ghosts. Every track also has its own day/night cycle, with shadows that
+follow the sun.
+
+THE WORLDS
+- Dune Flats (World 1). Rival: Armadillo. Brings switch gates, plus bridges
+  and tunnels. Tracks: Oasis, Canteen, Rattler, Saddle, Hourglass, Lasso,
+  Tumbleweed, Gourd, Scorpion.
+- Coral Shallows (World 2). Rival: Puffer. Brings sticky mud. Tracks: Bubble,
+  Teardrop, Shield, Clover, Cove, Keyhole, Trefoil Knot, Totem, Anchor.
+- Fern Hollow (World 3). Rival: Ladybug. Brings moles that dig you a shortcut.
+  Tracks: Acorn, Leaf, Plectrum, Mitten, Horseshoe, Mushroom, Bunny, Tooth,
+  Ivy Leaf.
 
 WHY IT'S FUN TO PLAY
 - One tap. Easy to pick up, hard to master. Your animal rolls on its own and
@@ -39,10 +67,11 @@ WHY IT'S FUN TO PLAY
   speed takes real skill.
 - Three worlds that each play differently: switch gates and bridges from the
   very first world, sticky mud in Coral Shallows, mole shortcuts in Fern
-  Hollow, and walls that crack if you keep hitting them. 27 handmade tracks, and no two
-  ride the same.
-- Race your friends, no setup: Game Center friends' best runs show up on the
-  track as ghosts. No invites and no waiting.
+  Hollow, and walls of sand, stone or wood that break apart if you keep
+  hitting them. 27 handmade tracks, and no two ride the same.
+- Race your friends' ghosts: once you've finished a world's Grand Prix, your
+  Game Center friends who've raced it join you as ghosts, at the pace of their
+  best times. Pass them, then brag about it.
 - Prove you're the best in the Grand Prix: all nine tracks of a world back to
   back against its rival animal. Win, and the rival joins your crew.
 - Plenty to unlock: 19 animals to collect, including Turkey, the first
@@ -59,11 +88,21 @@ THE STORY BEHIND IT
   game, TicToe Fury, for the first iPad. It was shelved. Development restarted
   from scratch on July 28, 2026, and Sebastián Salazar de Greiff built the
   whole game on his own.
-- Every animal is drawn in code: no image files for the art. Every animal,
-  plant and landmark is built from code shapes, so the whole scene recolors
-  live from day to night.
-- Original music that changes with each world: all the music was made for the
-  game, and it shifts its sound to match the world.
+- A world that changes color with the sun: nothing in Animal Loop is a flat
+  picture. The game draws every animal, tree and landmark itself, live, so the
+  whole world shifts color with the sun, from golden mornings to moonlit nights.
+- Every world has its own sound: all the music was made for the game. Each
+  world plays the songs on its own instruments, so the desert, the sea and the
+  forest each sound like a different place, and the music speeds up as you do.
+
+THE RACERS (19)
+Hedgehog (Spiky classic), Hamster (Cheeky & fast), Armadillo (Armoured
+bruiser), Puffer (Inflate & dominate), Ladybug (Spotted & speedy), Chinchilla
+(Soft & silent), Chipmunk (Striped sprinter), Mole (Digs, then wins), Tortoise
+(Slow but unstoppable), Frog (High jumper), Sugar Glider (Glides through
+corners), Owl (Night watcher), Red Panda (Nimble climber), Koala (Eucalyptus
+cruiser), Rabbit (Quick hopper), Octopus (Eight-armed spinner), Turkey
+(Fan-tailed show-off), Otter (River runner), Horsefish (Upright drifter).
 
 ABOUT WOZY
 wOzy is a small independent studio that has made iPhone and iPad apps and games

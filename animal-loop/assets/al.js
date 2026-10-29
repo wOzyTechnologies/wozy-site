@@ -81,7 +81,7 @@
     var A = V(k), B = V(k + 1);
     var bx = A[0] + (B[0] - A[0]) * f, by = A[1] + (B[1] - A[1]) * f;
     var trail = [V(k - 3), V(k - 2), V(k - 1), A, [bx, by]].map(function (q) { return q[0].toFixed(2) + ',' + q[1].toFixed(2); }).join(' ');
-    var p1 = svg('#5DA83B', 'Each tap turns your character',
+    var p1 = svg('#5DA83B', 'Every tap turns your animal',
       h('circle', { cx: 50, cy: 50, r: R, fill: 'none', stroke: '#5A3A1E', strokeWidth: 20 }),
       h('circle', { cx: 50, cy: 50, r: R, fill: 'none', stroke: '#EBD3A4', strokeWidth: 20, strokeDasharray: '3.2 3.2' }),
       h('circle', { cx: 50, cy: 50, r: R, fill: 'none', stroke: '#CFA46A', strokeWidth: 17 }),
@@ -95,7 +95,7 @@
     // 2 · Coral Shallows: the lower arm runs under the bridge
     var q2 = (t % 2.6) / 2.6;
     var cx2 = -12 + 124 * q2, cy2 = 96 - 92 * q2;
-    var p2 = svg('#39B8BE', 'Crossing under a bridge',
+    var p2 = svg('#39B8BE', 'Diving under a bridge',
       h('line', { x1: -12, y1: 96, x2: 112, y2: 4, stroke: '#C94F68', strokeWidth: 21 }),
       h('line', { x1: -12, y1: 96, x2: 112, y2: 4, stroke: '#F3B2BE', strokeWidth: 21, strokeDasharray: '3 3' }),
       h('line', { x1: -12, y1: 96, x2: 112, y2: 4, stroke: '#D9BE8E', strokeWidth: 18 }),
@@ -112,7 +112,7 @@
     var flip = clamp((x3 - 46) / 8), sy = 1 - 2 * flip, isCW = sy < 0;
     var gateCol = isCW ? '#FCA480' : '#70CBFE';
     var chev = function (y) { return h('polyline', { points: '-3.6,1.8 0,-1.8 3.6,1.8', fill: 'none', stroke: gateCol, strokeWidth: 1.9, strokeLinecap: 'round', strokeLinejoin: 'round', transform: 'translate(50 ' + y + ') scale(1 ' + sy.toFixed(3) + ')' }); };
-    var p3 = svg('#EBC891', 'A switch gate flipping the arrows',
+    var p3 = svg('#EBC891', 'A switch gate flipping your turns',
       h('rect', { x: -2, y: 29, width: 104, height: 42, fill: '#7A4524' }),
       h('line', { x1: -2, y1: 30.4, x2: 102, y2: 30.4, stroke: '#F4E2BE', strokeWidth: 2.4, strokeDasharray: '3 3' }),
       h('line', { x1: -2, y1: 69.6, x2: 102, y2: 69.6, stroke: '#F4E2BE', strokeWidth: 2.4, strokeDasharray: '3 3' }),
@@ -139,7 +139,7 @@
     var marks = [];
     if (x4 > m1) for (var mx = m1; mx < x4 - 5 && mx < m1 + 26; mx += 3.4) marks.push(h('circle', { cx: mx, cy: 50 + ((mx * 7) % 3 - 1), r: 0.9, fill: '#5B3519', opacity: 0.6 * (1 - (mx - m1) / 26) }));
     var pct = inMud ? 37 : 100;
-    var p4 = svg('#E3B97E', 'Rolling through mud',
+    var p4 = svg('#E3B97E', 'Getting stuck in the squelch',
       h('rect', { x: -2, y: 29, width: 104, height: 42, fill: '#7A4524' }),
       h('line', { x1: -2, y1: 30.4, x2: 102, y2: 30.4, stroke: '#F4E2BE', strokeWidth: 2.4, strokeDasharray: '3 3' }),
       h('line', { x1: -2, y1: 69.6, x2: 102, y2: 69.6, stroke: '#F4E2BE', strokeWidth: 2.4, strokeDasharray: '3 3' }),
@@ -204,7 +204,7 @@
       if (T5 < tOut) { var g = clamp((T5 - tPop) / (tOut - tPop)); ballEl = h('g', { transform: 'translate(' + hx + ' ' + yBot + ') scale(' + g.toFixed(3) + ') translate(' + (-hx) + ' ' + (-yBot) + ')' }, ball(hx, yBot, g)); }
       else ballEl = ball(hx - v5 * (T5 - tOut), yBot);
     }
-    var p5 = svg('#5DA83B', 'A mole digging a shortcut',
+    var p5 = svg('#5DA83B', 'Bonk the mole, take the shortcut',
       h('path', { d: trackPath, fill: 'none', stroke: '#5A3A1E', strokeWidth: 20 }),
       h('path', { d: trackPath, fill: 'none', stroke: '#EBD3A4', strokeWidth: 20, strokeDasharray: '3.2 3.2' }),
       h('path', { d: trackPath, fill: 'none', stroke: '#CFA46A', strokeWidth: 17 }),

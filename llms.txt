@@ -18,8 +18,9 @@
 
 ## Help
 
-- [What is a Grand Prix in Animal Loop?](https://www.wozy.co/animal-loop/help/what-is-a-grand-prix/): All nine tracks of a world raced back to back at one speed you pick, against that world's rival animal (Armadillo, Puffer or Ladybug); win it and the rival joins your roster
-- [How do you play Animal Loop with friends?](https://www.wozy.co/animal-loop/help/how-to-play-with-friends/): Invite friends through Game Center, race their best runs as ghosts and beat their Grand Prix times
+- [What is a Grand Prix in Animal Loop?](https://www.wozy.co/animal-loop/help/what-is-a-grand-prix/): All nine tracks of a world raced back to back at one speed you pick, against that world's rival animal (Armadillo, Puffer or Ladybug); win it and the rival joins your crew. Beginner speed gives unlimited lives, and Save & Leave lets you finish later
+- [How do you unlock every racer in Animal Loop?](https://www.wozy.co/animal-loop/help/how-to-unlock-racers/): All 19 racers and how each joins your crew: platinum achievement medals, beating a world's Grand Prix rival, racing 15 days in November for Turkey, or sharing and rating the game for Otter and Horsefish; earnable racers can be unlocked early for $0.99 each or $4.99 for all
+- [How do you play Animal Loop with friends?](https://www.wozy.co/animal-loop/help/how-to-play-with-friends/): Invite friends from the Friends page and become Game Center friends; their Grand Prix times show next to yours, and once you've finished a world's Grand Prix they race it with you as ghosts
 - [How do you play 9x9 tic-tac-toe in TicToe Fury?](https://www.wozy.co/tictoefury/help/how-to-play-9x9-tic-tac-toe/): The rules of 9x9 (ultimate) tic-tac-toe, with a diagram and strategy tips
 - [Odyz FAQ](https://www.odyz.app/#faq): How to track your trips, see your travel stats, and see how many and which countries and cities you've visited, each with a step-by-step page
 
