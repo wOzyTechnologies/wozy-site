@@ -83,6 +83,11 @@
   .facts dd { margin: 4px 0 0; font-size: 17px; font-weight: 800; color: #2B1F4D; overflow-wrap: anywhere; }
   .copy { background: #FFFDF6; border-radius: 24px; padding: 24px 26px 12px; box-shadow: 0 0 0 1.5px #EADFC4; margin-bottom: 18px; }
   .bullets { margin: 0; padding-left: 22px; columns: 2 300px; column-gap: 40px; }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 18px; }
+  .points .lead { grid-column: 1 / -1; }
+  .points li { background: #FFFDF6; border-radius: 20px; padding: 20px 22px 8px; box-shadow: 0 0 0 1.5px #EADFC4; }
+  .points h3 { margin: 0 0 6px; font-size: 19px; line-height: 1.25; font-weight: 900; color: #2B1F4D; }
+  .points p { font-size: 16px; }
   .bullets li { break-inside: avoid; margin-bottom: 6px; }
   .gallery { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; }
   .gallery a { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #3A2F55; }
@@ -91,6 +96,8 @@
   .gallery span { font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.35; }
   .in-hand { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   .in-hand img { background: linear-gradient(180deg, #B08ED0 0%, #E1A0C2 55%, #F8C6B6 100%); }
+  .duo { grid-template-columns: minmax(0, 1fr) minmax(0, 1.92fr); align-items: end; max-width: 760px; }
+  @media (max-width: 560px) { .duo { grid-template-columns: minmax(0, 1fr); } }
   .racers { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
   .racers img { box-shadow: none; background: #F1E6C9; padding: 8px; box-sizing: border-box; }
   .racers a:hover img { box-shadow: 0 0 0 1.5px #EDA11F; }
@@ -147,7 +154,7 @@
   <span class="tag">PRESS KIT</span>
   <h1>Animal Loop</h1>
   <p>The one-tap racing game for iPhone, iPad and Mac. Your animal rolls on its own. Every tap turns it.</p>
-  <a class="btn" href="animal-loop-press-kit.zip" download>Download the press kit <small>ZIP · 8 MB</small></a>
+  <a class="btn" href="animal-loop-press-kit.zip" download>Download the press kit <small>ZIP · 11 MB</small></a>
   <a class="btn btn-alt" href="/contact/?app=animal-loop&amp;type=press">Contact us for press</a>
 </header>
 
@@ -181,24 +188,28 @@
     </div>
   </section>
 
-  <section aria-labelledby="features">
-    <h2 id="features">Key facts</h2>
-    <ul class="bullets">
-      <li>1 button: every tap turns your racer</li>
-      <li>3 worlds: Dune Flats, Coral Shallows and Fern Hollow</li>
-      <li>27 handmade tracks, 9 per world</li>
-      <li>18 collectible racers, from a hamster to an octopus</li>
-      <li>A Grand Prix in every world, raced against a rival animal</li>
-      <li>Game Center friends race as ghosts of their best runs</li>
-      <li>A real-time day/night cycle on every track</li>
-      <li>Bridges, switch gates, mud, mole tunnels and walls that crack</li>
+  <section aria-labelledby="fun">
+    <h2 id="fun">Why it's fun to play</h2>
+    <ul class="points">
+      <li class="lead"><h3>One tap. Easy to pick up, hard to master.</h3><p>Your animal rolls on its own and every tap turns it. Anyone can play in seconds. Holding a clean line at top speed takes real skill.</p></li>
+      <li><h3>Three worlds that each play differently</h3><p>Switch gates in Dune Flats, bridges and tunnels in Coral Shallows, sticky mud and mole shortcuts in Fern Hollow, and walls that crack if you keep hitting them. 27 handmade tracks, and no two ride the same.</p></li>
+      <li><h3>Race your friends, no setup</h3><p>Your Game Center friends' best runs show up on the track as ghosts. No invites and no waiting. Just start a race and see who's ahead.</p></li>
+      <li><h3>Prove you're the best in the Grand Prix</h3><p>Race all nine tracks of a world back to back against its rival animal. Win, and the rival joins your crew.</p></li>
+      <li><h3>Plenty to unlock</h3><p>Collect 18 animals and earn achievements along the way. Everything in the game can be unlocked by playing.</p></li>
+      <li><h3>Play anywhere</h3><p>Your progress syncs through iCloud across iPhone, iPad and Mac. On iPhone Duo it plays folded or open, however you hold it.</p></li>
+      <li><h3>Free, and always growing</h3><p>The whole game is free, with new tracks, worlds and racers added regularly. Next up: Frost Valley, a fourth world where the ice breaks behind you.</p></li>
     </ul>
   </section>
 
-  <section aria-labelledby="history">
-    <h2 id="history">History</h2>
-    <p>Animal Loop began around 2010 as <em>Hamster Racing</em>, an idea sketched right after wOzy launched its first game, TicToe Fury, for the first iPad. It was shelved. Development restarted from a blank Xcode project on July 28, 2026.</p>
-    <p>A game with a single input lives or dies on its difficulty curve, so Sebastián built custom tools to balance the 27 tracks: a level editor, a track analyzer that scores each track's difficulty, and a simulator that plays every track with a bot. The full story is in the dev diary: <a href="../blog/building-animal-loop/">One Tap, Twenty-Seven Tracks, and a Simulation Engine I Never Planned to Build</a>.</p>
+  <section aria-labelledby="story">
+    <h2 id="story">The story behind it</h2>
+    <ul class="points">
+      <li><h3>Sixteen years from sketch to App Store</h3><p>Animal Loop began in 2010 as <em>Hamster Racing</em>, a pen sketch made right after wOzy launched its first game, TicToe Fury, for the first iPad. It was shelved. Development finally restarted from a blank Xcode project on July 28, 2026, and Sebastián Salazar de Greiff, co-founder of wOzy, built the whole game on his own.</p></li>
+      <li><h3>Every animal is drawn in code</h3><p>There are no image files for the art. Every animal, plant and landmark is built from code shapes, so the whole scene can recolor live from day to night, at up to 120 fps.</p></li>
+      <li><h3>Original music that changes with each world</h3><p>All the music was made for the game and is played live, shifting its sound to match the world you're racing in.</p></li>
+      <li><h3>A bot that tests every track</h3><p>With one button, a track that's slightly too narrow can become impossible. So Sebastián built a level editor, a track analyzer that scores each track's difficulty, and a bot that plays every track with human-like mistakes to find where it breaks. Every track is rated from 150cc to 285cc.</p></li>
+    </ul>
+    <p style="margin-top: 18px">The full story is in the dev diary: <a href="../blog/building-animal-loop/">One Tap, Twenty-Seven Tracks, and a Simulation Engine I Never Planned to Build</a>.</p>
   </section>
 
   <section aria-labelledby="shots">
@@ -218,12 +229,22 @@
 
   <section aria-labelledby="in-hand">
     <h2 id="in-hand">Phone in hand</h2>
-    <p class="note">Animal Loop on an iPhone, held in a hand. Transparent PNGs, 1606 × 2176, ready to drop on any background.</p>
+    <p class="note">Animal Loop on an iPhone, held in a hand. Transparent PNGs, 1606 × 2176 unless noted, ready to drop on any background.</p>
     <ul class="gallery in-hand">
       <li><a href="files/in-hand/animal-loop-in-hand-01-menu.png" download><img src="../assets/in-hand/01-menu.webp" alt="Animal Loop on an iPhone held in a hand: Main menu" width="600" height="813" loading="lazy"><span>Main menu</span></a></li>
       <li><a href="files/in-hand/animal-loop-in-hand-02-dune-flats-day.png" download><img src="../assets/in-hand/02-dune-flats-day.webp" alt="Animal Loop on an iPhone held in a hand: Dune Flats at noon" width="600" height="813" loading="lazy"><span>Dune Flats at noon</span></a></li>
       <li><a href="files/in-hand/animal-loop-in-hand-03-coral-shallows-trefoil.png" download><img src="../assets/in-hand/03-coral-shallows-trefoil.webp" alt="Animal Loop on an iPhone held in a hand: Coral Shallows: Trefoil" width="600" height="813" loading="lazy"><span>Coral Shallows: Trefoil</span></a></li>
       <li><a href="files/in-hand/animal-loop-in-hand-04-fern-hollow-mushroom.png" download><img src="../assets/in-hand/04-fern-hollow-mushroom.webp" alt="Animal Loop on an iPhone held in a hand: Fern Hollow: Mushroom" width="600" height="813" loading="lazy"><span>Fern Hollow: Mushroom</span></a></li>
+      <li><a href="files/in-hand/animal-loop-in-hand-05-iphone-dune-flats-figure-8.png" download><img src="../assets/iphone-in-hand.webp" alt="Animal Loop on an iPhone held in a hand: Dune Flats: Figure 8" width="740" height="1009" loading="lazy"><span>Dune Flats: Figure 8 (740 × 1009)</span></a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="duo">
+    <h2 id="duo">iPhone Duo</h2>
+    <p class="note">Animal Loop on iPhone Duo, folded and open. Transparent PNGs, ready to drop on any background.</p>
+    <ul class="gallery in-hand duo">
+      <li><a href="files/iphone-duo/animal-loop-iphone-duo-folded-fern-hollow.png" download><img src="../assets/duo-in-hand.webp" alt="Animal Loop's Fern Hollow track on an iPhone Duo, folded, held in one hand" width="860" height="1112" loading="lazy"><span>Folded: Fern Hollow (860 × 1112)</span></a></li>
+      <li class="open"><a href="files/iphone-duo/animal-loop-iphone-duo-open-coral-shallows.png" download><img src="../assets/duo-open-in-hands.webp" alt="Animal Loop's Coral Shallows trefoil track across an open iPhone Duo, held in two hands" width="1500" height="1012" loading="lazy"><span>Open: Coral Shallows (1500 × 1012)</span></a></li>
     </ul>
   </section>
 

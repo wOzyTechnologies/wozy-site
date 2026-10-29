@@ -33,23 +33,41 @@ you pick, against that world's rival animal. Win it and the rival joins your
 roster. Game Center friends race alongside you as ghosts of their best runs.
 Every track also has its own day/night cycle, with shadows that follow the sun.
 
-KEY FACTS
-- 1 button: every tap turns your racer
-- 3 worlds: Dune Flats, Coral Shallows and Fern Hollow
-- 27 handmade tracks, 9 per world
-- 18 collectible racers, from a hamster to an octopus
-- A Grand Prix in every world, raced against a rival animal
-- Game Center friends race as ghosts of their best runs
-- A real-time day/night cycle on every track
-- Track mechanics: bridges, switch gates, mud, mole tunnels and walls that crack
+WHY IT'S FUN TO PLAY
+- One tap. Easy to pick up, hard to master. Your animal rolls on its own and
+  every tap turns it. Anyone can play in seconds. Holding a clean line at top
+  speed takes real skill.
+- Three worlds that each play differently: switch gates in Dune Flats, bridges
+  and tunnels in Coral Shallows, sticky mud and mole shortcuts in Fern Hollow,
+  and walls that crack if you keep hitting them. 27 handmade tracks, and no two
+  ride the same.
+- Race your friends, no setup: Game Center friends' best runs show up on the
+  track as ghosts. No invites and no waiting.
+- Prove you're the best in the Grand Prix: all nine tracks of a world back to
+  back against its rival animal. Win, and the rival joins your crew.
+- Plenty to unlock: 18 animals to collect and achievements to earn.
+  Everything in the game can be unlocked by playing.
+- Play anywhere: progress syncs through iCloud across iPhone, iPad and Mac.
+  On iPhone Duo it plays folded or open, however you hold it.
+- Free, and always growing: new tracks, worlds and racers are added regularly.
+  Next up: Frost Valley, a fourth world where the ice breaks behind you.
 
-HISTORY
-Animal Loop began around 2010 as "Hamster Racing", an idea sketched right after
-wOzy launched its first game, TicToe Fury, for the first iPad. It was shelved.
-Development restarted from a blank Xcode project on July 28, 2026. To balance
-27 tracks for a game with a single input, Sebastián built a custom level
-editor, a track analyzer that scores every track's difficulty, and a simulator
-that plays every track with a bot.
+THE STORY BEHIND IT
+- Sixteen years from sketch to App Store: Animal Loop began in 2010 as
+  "Hamster Racing", a pen sketch made right after wOzy launched its first
+  game, TicToe Fury, for the first iPad. It was shelved. Development restarted
+  from a blank Xcode project on July 28, 2026, and Sebastián Salazar de
+  Greiff built the whole game on his own.
+- Every animal is drawn in code: no image files for the art. Every animal,
+  plant and landmark is built from code shapes, so the whole scene recolors
+  live from day to night, at up to 120 fps.
+- Original music that changes with each world: all the music was made for the
+  game and is played live, shifting its sound to match the world.
+- A bot that tests every track: with one button, a track that's slightly too
+  narrow can become impossible. So Sebastián built a level editor, a track
+  analyzer that scores each track's difficulty, and a bot that plays every
+  track with human-like mistakes to find where it breaks. Every track is rated
+  from 150cc to 285cc.
 
 ABOUT WOZY
 wOzy is a small independent studio that has made iPhone and iPad apps and games
@@ -62,8 +80,10 @@ https://www.wozy.co/
 ASSETS IN THIS KIT
 - icon/: app icon, 1024x1024 PNG
 - screenshots/: 8 in-game screenshots, 720x1565 JPG
-- in-hand/: 4 renders of the game on an iPhone held in a hand, 1606x2176
-  transparent PNG
+- in-hand/: 5 renders of the game on an iPhone held in a hand, transparent
+  PNG (4 at 1606x2176, 1 at 740x1009)
+- iphone-duo/: the game on iPhone Duo, folded (860x1112) and open
+  (1500x1012), transparent PNG
 - racers/: all 18 racers, transparent PNG
 - animal-loop-key-art-1200x630.jpg
 
